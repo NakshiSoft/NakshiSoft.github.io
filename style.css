@@ -1,0 +1,163 @@
+/* Reset default styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+
+	/* Colors */
+	--primary-color: #333;
+	--secondary-color: #ddd;
+	--tertiary-color: #87b8e1;
+	--quaternary-color: #383838;
+}
+
+html {
+	background-color: var(--quaternary-color);
+}
+  
+body {
+	font-family: Arial, sans-serif;
+	background-color: var(--quaternary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--secondary-color);
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+p {
+	color: var(--secondary-color);
+	margin-bottom: 10px;
+}
+
+header {
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 0 0;
+  }
+
+nav {
+	padding: 10px 0px;
+	background-color: var(--primary-color);
+	min-height: fit-content;
+	height: 100%;
+	transition: top 0.3s; 
+}
+  
+nav a {
+	text-decoration: none;
+	padding: 10px 20px;
+	height: 100%;
+}
+
+nav a:hover {
+	color: #ddd;
+	transition: 0.4s;
+}
+
+a {
+	color: var(--tertiary-color);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+td {
+	padding: 10px;
+	color: var(--secondary-color)
+}
+
+section {
+	padding: 20px 0;
+}
+
+#header-image {
+	width: 100%;
+	height: auto;
+}
+
+#header-image img {
+	width: 100%;
+	height: auto;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+#games {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.game-card {
+	position: relative;
+	width: 100%;
+	padding: 20px;
+	max-width: 400px;
+	min-height: 370px;
+	margin: 20px 0;
+	background-color: var(--primary-color);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.game-card h2 {
+	position: absolute;
+	text-shadow: #333 1px 1px 1px;
+	margin-bottom: 10px;
+}
+
+.game-card p {
+	position: absolute;
+	bottom: 20px;
+	color: var(--secondary-color);
+	height: 100px;
+}
+
+.game-screenshot {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+
+.blurred-image {
+	filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 1201px) {
+}
